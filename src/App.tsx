@@ -66,7 +66,7 @@ const TodoApp: React.FC = () => {
                     placeholder="Enter todo"
                     style={styles.input}
                 />
-                <button onClick={addTodo} style={styles.button}>Add New Todo</button>
+                <button onClick={addTodo} style={styles.button}>Add NewTodo</button>
             </div>
             {newTodo.length > 15 && (
                 <p style={{ color: 'red' }}>Name must be 15 characters or less</p>
