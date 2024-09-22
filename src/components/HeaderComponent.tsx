@@ -1,13 +1,33 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+
 import '../styles/HeaderComponent.css';
 
 const HeaderComponent: React.FC = () => {
+    const [time, setTime] = useState<string>("");
+
+    // Функция для обновления времени
+    const updateTime = () => {
+        const now = new Date();
+        const hours = String(now.getHours()).padStart(2, "0");
+        const minutes = String(now.getMinutes()).padStart(2, "0");
+        const seconds = String(now.getSeconds()).padStart(2, "0");
+        setTime(`${hours}:${minutes}:${seconds}`);
+    };
+
+    // Используем useEffect для запуска таймера
+    useEffect(() => {
+        updateTime(); // Устанавливаем время при первом рендере
+        const intervalId = setInterval(updateTime, 1000); // Обновляем каждую секунду
+
+        return () => clearInterval(intervalId); // Очищаем таймер при размонтировании
+    }, []);
+
     return (
         <>
             {/* Верхний хедер */}
             <header className="header-top">
                 <div className="header-top__left">
-                    <span className="header-top__time">14:28:33</span>
+                    <span className="header-top__time">{time}</span>
                 </div>
                 <div className="header-top__right">
                     <a href="/" className="header-link">Terms and Conditions</a>
