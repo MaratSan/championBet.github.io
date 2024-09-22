@@ -1,0 +1,29 @@
+.bet-slip {
+    width: 240px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-left: 1px solid #eee;
+}
+
+.bet-slip h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.bet-slip__empty {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.bet-slip__button {
+    background-color: #28a745;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+}
+
+.bet-slip__button:hover {
+    background-color: #218838;
+}

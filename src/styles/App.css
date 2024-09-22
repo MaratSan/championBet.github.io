@@ -1,0 +1,29 @@
+/* Основной контейнер приложения */
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #dadde1;
+}
+
+/* Основной контент */
+.main-content {
+    display: flex;
+    flex: 1;
+    margin-top: 20px;
+}
+
+/* Контент справа от Sidebar */
+.right-content {
+    display: flex;
+    flex: 1;
+    margin-left: 20px;
+}
+
+/* Правая колонка с Bet Slip и Popular Games */
+.right-sidebar {
+    width: 300px;
+    margin-left: 20px;
+}
+
+/* Остальные стили (Sidebar, Highlights, Header) остаются без изменений */

@@ -1,0 +1,159 @@
+/* Общие стили для всех частей хедера */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2c2c2c;
+    color: white;
+}
+
+.header-link {
+    margin-right: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.header-link:hover {
+    text-decoration: underline;
+}
+
+/* Верхний хедер */
+.header-top {
+    background-color: #2c2c2c;
+}
+
+.header-top__left {
+    display: flex;
+    align-items: center;
+}
+
+.header-top__time {
+    font-size: 14px;
+    color: #fff;
+}
+
+.header-top__right {
+    display: flex;
+    align-items: center;
+}
+
+.header-top__register-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.header-top__register-btn:hover {
+    background-color: #218838;
+}
+
+/* Средний хедер */
+.header-middle {
+    background-color: #2c2c2c;
+    padding: 10px 10px 0px 10px;
+    margin: 0;
+}
+
+.header-middle__left {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.header-logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.header-logo-highlight {
+    color: #a4d64d; /* Зеленый цвет для "KIWI" */
+}
+
+.header-middle__nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-tab {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin-right: 10px;
+    border-radius: 0 0 8px 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header-tab.active {
+    background-color: #fff; /* Белый фон для активного таба */
+    color: #333; /* Черный текст */
+    border-radius: 8px 8px 0 0; /* Закругленные углы сверху */
+    margin-bottom: -2px; /* Чтобы активный таб выглядел на одном уровне */
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1); /* Небольшая тень */
+}
+
+.header-middle__auth {
+    display: flex;
+    align-items: center;
+}
+
+.header-input {
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 8px 12px;
+    color: white;
+    margin-right: 10px;
+    border-radius: 5px;
+    width: 150px;
+}
+
+.header-input::placeholder {
+    color: #b0b0b0;
+}
+
+.header-middle__login-btn {
+    background-color: white;
+    color: #000;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.header-middle__login-btn:hover {
+    background-color: #e0e0e0;
+}
+
+/* Нижний хедер */
+.header-bottom {
+    background-color: #fff; /* Изменяем фон на белый */
+    padding: 10px 20px;
+    border-top: 2px solid white;
+    margin: 0;
+    color: #000; /* Изменяем цвет текста на черный */
+}
+
+.header-bottom__nav-left a,
+.header-bottom__nav-right a {
+    color: #000; /* Цвет текста черный */
+    text-decoration: none;
+}
+
+.header-bottom__nav-left a:hover,
+.header-bottom__nav-right a:hover {
+    color: #28a745; /* Можно добавить эффект при наведении, например, зеленый */
+}
+
+.header-link-new {
+    background-color: #ffcc00;
+    color: #000;
+    font-size: 12px;
+    padding: 3px 5px;
+    border-radius: 3px;
+    margin-left: 5px;
+}
